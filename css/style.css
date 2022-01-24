@@ -1,3 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+ -webkit-font-smoothing: antialiased;
+ background-color: #FAFAFA;
+}
+
+button {
+ cursor: pointer;
+}
 /*
 Theme Name: Instagram
 Author: Kenzie Academy
@@ -21,13 +39,51 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*BODY*/
 body{
-
+	width: 900px;
+	height: 900px;
 }
 
 /*TOPO*/
 header{
+	margin: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 40px;
 	
+
 }
+input.txt{
+	padding-left: 5px;
+	height: 27px;
+	border-radius: 10px;
+	border-color: #DBDBDB;
+	border-style: solid;
+	color: #717171;
+	background-color: #FAFAFA;
+}
+input.butt{
+	background-color: #FAFAFA;
+	width: 57px;
+	height: 27px;
+	border-radius: 8px;
+	border-color: #DBDBDB;
+	border-style: solid;
+	transition-duration: 0.4s;
+	color: #0095f6;
+	font-size: 13px;
+	font-weight: 500;
+	cursor: pointer;
+}
+.butt:hover{
+	background-color: #0095F6 ;
+	color: #DBDBDB;
+	border-color: #0095F6 ;
+
+}
+
+
 
 /*RODAPÉ*/
 footer{
@@ -36,16 +92,99 @@ footer{
 
 /*PÁGINA INICIAL*/
 main{
-	
+
 }
 	main .profile-content{
 
+		margin: 34px 0px 0px 70px;
+		display: flex;
+		flex-direction: row;
+		color: #262626;
+	}
+	main .profile-follow{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	main h1{
+		font-size: 40px;
+		font-weight: 100;
+	}
+	main h2{
+		margin: 13px 0px 13px 0px;
+		font-size: 23px;
+
+	}
+	main a{
+		font-weight: bold;
+	}
+	main button{
+		color: #FAFAFA;
+		margin-top: 5px;
+		margin-right: 30px;
+		width: 67px;
+		height: 35px;
+		border-radius: 5px;
+		font-weight: 500;
+		font-size: 15px;
+		border-style: none;
+		background-color: #0095F6 ;
+	}
+	main .profile-data{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 13px;
+		margin-bottom: 13px;;
+	}
+	main span{
+		font-weight: bold;
 	}
 
-	main .highlighted-stories{
-
+	main .highlighted-stories ul{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+	main .highlighted-stories li{
+		margin: 50px 10px 13px 20px;
+		text-align: center;
+		
+	}
+	main .highlighted-stories img{
+		border-radius: 50%;
+		padding: 2px;
+		border-style: solid;
+		border-width: 2px;
+		border-color: #717171;
 	}
 
-	main .profile-posts{
+	main .profile-posts nav ul{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
 
+	}
+	main .profile-posts nav li{
+		padding: 27px ;
+	}
+	.post{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		
+	}
+	.post li img{
+		width: 285px;
+		height: 285px;
+	}
+	main .profile-photo img{
+		padding: 4px;
+		margin-right: 80px;
+		border-radius: 50%;
+		border-style: solid;
+		border-width: 2px;
+		border-color: rgb(205, 82, 209);
+		width: 160px;
 	}
